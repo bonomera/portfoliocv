@@ -8,8 +8,8 @@ export default function Navigation() {
 
   return (
     <nav>
-      <a className="logo" href="#home">
-        BSODium
+      <a className="logo" href="/">
+        Portfolio
       </a>
       <ul className="nav-links">
         <li>
@@ -20,6 +20,9 @@ export default function Navigation() {
         </li>
         <li>
           <a onClick={() => scrollToSection('contact')}>Contact</a>
+        </li>
+        <li>
+          <a href="/contact">Forum</a>
         </li>
       </ul>
     </nav>

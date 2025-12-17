@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# # Portfolio 
+---
+Personal portfolio website with a space-themed design. It features blur effects, green glowing halos, and a small message forum.
 
-## Getting Started
+---
 
-First, run the development server:
+## ## Tech Stack
+* **Framework:** Next.js (App Router)
+* **Language:** TypeScript
+* **Database:** PostgreSQL
+* **ORM:** Drizzle ORM
+* **Security:** bcryptjs (for password hashing)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ## Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Install dependencies:**
+    `npm install`
+2.  **Start the project:**
+    `npm run dev`
+3.  **Open in browser:**
+    [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ## Database Setup
+* **System:** PostgreSQL
+* **Tool:** Drizzle ORM
+* **Security:** All passwords are **hashed** with bcrypt before being saved.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ## Contact Forum (User Features)
+Normal users can:
+* **Create** a new account.
+* **Log in** and **Log out**.
+* **Write** public messages.
+* **Delete** their own messages.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ## Admin Role
+The Admin status is set in the database (column `is_admin` in the `users` table).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+An Admin can:
+* **View** all users and their hashed passwords.
+* **Delete** any message from any user.
+* **Delete** any user account.
+* **Post** and delete their own messages.
