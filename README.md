@@ -1,8 +1,5 @@
 # # Portfolio 
----
 Personal portfolio website with a space-themed design. It features blur effects, green glowing halos, and a small message forum.
-
----
 
 ## ## Tech Stack
 * **Framework:** Next.js (App Router)
@@ -11,25 +8,17 @@ Personal portfolio website with a space-themed design. It features blur effects,
 * **ORM:** Drizzle ORM
 * **Security:** bcryptjs (for password hashing)
 
----
-
 ## ## Getting Started
 
-1.  **Install dependencies:**
-    `npm install`
-2.  **Start the project:**
+1.  **Start the project:**
     `npm run dev`
-3.  **Open in browser:**
+2.  **Open in browser:**
     [http://localhost:3000](http://localhost:3000)
-
----
 
 ## ## Database Setup
 * **System:** PostgreSQL
 * **Tool:** Drizzle ORM
 * **Security:** All passwords are **hashed** with bcrypt before being saved.
-
----
 
 ## ## Contact Forum (User Features)
 Normal users can:
@@ -37,8 +26,6 @@ Normal users can:
 * **Log in** and **Log out**.
 * **Write** public messages.
 * **Delete** their own messages.
-
----
 
 ## ## Admin Role
 The Admin status is set in the database (column `is_admin` in the `users` table).
